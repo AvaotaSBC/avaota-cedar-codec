@@ -1,0 +1,4 @@
+usr/lib/aarch64-linux-gnu/avaota-cedar/libMemAdapter.so
+usr/lib/aarch64-linux-gnu/avaota-cedar/libVE.so
+usr/lib/aarch64-linux-gnu/avaota-cedar/libcdc_base.so
+etc/cedarc.conf

@@ -1,0 +1,13 @@
+avaota-sun55i-cedar-codec (0.3.0+sun55i20261124) unstable; urgency=medium
+
+  * Add a stable H.264 encoder bridge for external applications.
+
+ -- Local T527 Packaging <local-packaging@example.org>  Tue, 24 Nov 2026 00:00:00 +0800
+
+avaota-cedar-codec (0.2.0+vendor20261123) unstable; urgency=medium
+
+  * Package the T527 Tina CedarC and CedarX stacks privately for arm64.
+  * Build private FFmpeg, x264 and libvpx tools for Debian and Ubuntu.
+  * Include the Tina Cedar runtime configuration.
+
+ -- Local T527 Packaging <local-packaging@example.org>  Mon, 23 Nov 2026 00:00:00 +0800

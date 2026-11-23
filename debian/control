@@ -1,0 +1,60 @@
+Source: avaota-sun55i-cedar-codec
+Section: non-free/video
+Priority: optional
+Maintainer: Local T527 Packaging <local-packaging@example.org>
+Build-Depends: debhelper-compat (= 13), patchelf, gcc-aarch64-linux-gnu, binutils-aarch64-linux-gnu, xz-utils, pkgconf, make, python3
+Standards-Version: 4.7.0
+Rules-Requires-Root: no
+
+Package: avaota-cedar-runtime
+Architecture: arm64
+Depends: ${misc:Depends}, libc6 (>= 2.17)
+Description: Private common Allwinner Cedar runtime for Avaota A1
+ Common VE, memory and support libraries from the local T527 Tina SDK.
+ They use a package-specific directory and need the matching vendor kernel.
+
+Package: avaota-cedar-encoder
+Architecture: arm64
+Depends: ${misc:Depends}, avaota-cedar-runtime (= ${binary:Version}), libc6 (>= 2.17)
+Description: Private Allwinner Cedar hardware encoder for Avaota A1
+ H.264, H.265 and JPEG encoder libraries from the local T527 Tina SDK.
+
+Package: avaota-cedar-decoder
+Architecture: arm64
+Depends: ${misc:Depends}, avaota-cedar-runtime (= ${binary:Version}), libc6 (>= 2.17)
+Description: Private Allwinner Cedar video decoder for Avaota A1
+ Decoder frontend and format plugins from the local T527 Tina SDK.
+
+Package: avaota-cedar-encoder-dev
+Architecture: arm64
+Depends: ${misc:Depends}, avaota-cedar-common-dev (= ${binary:Version}), avaota-cedar-encoder (= ${binary:Version}), pkgconf
+Description: Headers and pkg-config file for the Avaota Cedar encoder
+ Local development files for linking applications to the private Cedar
+ encoder runtime.
+
+Package: avaota-cedar-decoder-dev
+Architecture: arm64
+Depends: ${misc:Depends}, avaota-cedar-common-dev (= ${binary:Version}), avaota-cedar-decoder (= ${binary:Version}), pkgconf
+Description: Headers and pkg-config file for the Avaota Cedar decoder
+ Local development files for linking applications to the private Cedar
+ decoder runtime.
+
+Package: avaota-cedar-common-dev
+Architecture: arm64
+Depends: ${misc:Depends}, avaota-cedar-runtime (= ${binary:Version})
+Description: Shared Allwinner Cedar API headers for Avaota A1
+ Common headers required by the Cedar encoder and decoder development files.
+
+Package: avaota-cedar-media
+Architecture: arm64
+Depends: ${misc:Depends}, avaota-cedar-runtime (= ${binary:Version}), avaota-cedar-encoder (= ${binary:Version}), avaota-cedar-decoder (= ${binary:Version}), libc6 (>= 2.17), libstdc++6, zlib1g, libatomic1, libasound2t64 | libasound2
+Description: Private CedarX media libraries for Avaota A1
+ Tina CedarX audio codec, container parser, muxer, playback and recording
+ libraries. They use the private Cedar runtime and matching kernel ABI.
+
+Package: avaota-cedar-ffmpeg
+Architecture: arm64
+Depends: ${misc:Depends}, libc6 (>= 2.17)
+Description: Private FFmpeg multimedia tools and libraries for Avaota A1
+ FFmpeg command-line tools and shared libraries built from upstream source.
+ Native FFmpeg codecs are independent of the Cedar hardware API.

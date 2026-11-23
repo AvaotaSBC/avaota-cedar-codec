@@ -1,0 +1,30 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Avaota A1 multimedia stack
+Source: Tina T527 SDK and upstream FFmpeg, x264, libvpx source archives
+
+Files: vendor/arm64/* vendor/include/*
+Copyright: Allwinner Technology Co. Ltd.
+License: vendor-supplied
+ See the corresponding files in the Tina SDK.
+
+Files: vendor/ffmpeg-7.1.5-full.tar.xz
+Copyright: FFmpeg contributors
+License: LGPL-2.1-or-later and GPL-2.0-or-later
+ See the COPYING files in the source archive.
+
+Files: vendor/x264-tina.tar.xz
+Copyright: x264 contributors
+License: GPL-2.0-or-later
+ See the COPYING file in the source archive.
+
+Files: vendor/libvpx-1.11.0.tar.xz
+Copyright: WebM Project authors
+License: BSD-3-Clause
+ See the LICENSE file in the source archive.
+
+Files: debian/* scripts/* tests/* build.sh pkgconfig/* README.md
+Copyright: 2026 Avaota A1 local integration
+License: MIT
+ Permission is hereby granted, free of charge, to any person obtaining a
+ copy of these packaging files to deal in them without restriction, subject
+ to inclusion of this notice. THE FILES ARE PROVIDED AS IS, WITHOUT WARRANTY.

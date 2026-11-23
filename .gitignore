@@ -1,0 +1,16 @@
+*.deb
+*.build
+*.buildinfo
+*.changes
+*.dsc
+/avaota-sun55i-cedar-codec_*.tar.*
+.debhelper/
+dist/
+debian/.debhelper/
+debian/avaota-cedar-*/
+debian/tmp/
+debian/files
+debian/debhelper-build-stamp
+debian/*.substvars
+debian/*.debhelper.log
+obj-*/

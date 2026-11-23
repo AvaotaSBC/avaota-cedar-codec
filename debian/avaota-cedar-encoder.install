@@ -1,0 +1,7 @@
+usr/lib/aarch64-linux-gnu/avaota-cedar/libvencoder.so
+usr/lib/aarch64-linux-gnu/avaota-cedar/libavaota-cedar-bridge.so
+usr/lib/aarch64-linux-gnu/avaota-cedar/libvenc_base.so
+usr/lib/aarch64-linux-gnu/avaota-cedar/libvenc_common.so
+usr/lib/aarch64-linux-gnu/avaota-cedar/libvenc_h264.so
+usr/lib/aarch64-linux-gnu/avaota-cedar/libvenc_h265.so
+usr/lib/aarch64-linux-gnu/avaota-cedar/libvenc_jpeg.so

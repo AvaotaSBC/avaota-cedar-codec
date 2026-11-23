@@ -1,0 +1,6 @@
+usr/lib/avaota-multimedia/bin/*
+usr/lib/avaota-multimedia/lib/*
+usr/lib/avaota-multimedia/include/*
+usr/lib/avaota-multimedia/share/*
+usr/bin/avaota-ffmpeg
+usr/bin/avaota-ffprobe

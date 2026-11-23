@@ -1,0 +1,9 @@
+prefix=/usr
+libdir=${prefix}/lib/aarch64-linux-gnu/avaota-cedar
+includedir=${prefix}/include/avaota-cedar
+
+Name: avaota-cedar-encoder
+Description: Private Allwinner Cedar encoder API for Avaota A1
+Version: 0.3.0
+Cflags: -I${includedir}
+Libs: -L${libdir} -Wl,-rpath,${libdir} -lvencoder -lMemAdapter -lcdc_base
