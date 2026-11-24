@@ -29,10 +29,10 @@ The eight arm64 `.deb` files appear in the parent directory. Building needs neit
 
 Push this directory as a GitHub repository with a `main` branch. Add an Actions secret named `APT_GPG_PRIVATE_KEY` containing an exported ASCII-armored GPG secret key. For a protected key, also add `APT_GPG_PASSPHRASE`. Set **Pages → Build and deployment → Source** to **GitHub Actions**. Pull requests build the packages; pushes to `main` and manual workflow runs publish a signed arm64 APT repository on GitHub Pages. Keep the signing key for later releases so installed systems continue to trust updates.
 
-On an arm64 Debian or Ubuntu system, replace `OWNER` and `REPO` with the GitHub repository name:
+On an arm64 Debian or Ubuntu system:
 
 ```sh
-base=https://OWNER.github.io/REPO
+base=https://avaotasbc.github.io/avaota-cedar-codec
 curl -fsSL "$base/KEY.gpg" | sudo tee /usr/share/keyrings/avaota-sun55i-cedar.gpg >/dev/null
 curl -fsSL "$base/avaota-sun55i-cedar.sources" | sudo tee /etc/apt/sources.list.d/avaota-sun55i-cedar.sources >/dev/null
 sudo apt update
