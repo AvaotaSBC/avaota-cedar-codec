@@ -1,3 +1,28 @@
+avaota-sun55i-cedar-codec (0.4.3+sun55i20261125) unstable; urgency=medium
+
+  * Add JPEG encoding and probeable H.265 bridge support.
+  * Enable measured faster H.264 encoding on Sun55i.
+
+ -- Local T527 Packaging <local-packaging@example.org>  Wed, 25 Nov 2026 00:00:00 +0800
+
+avaota-sun55i-cedar-codec (0.4.2+sun55i20261125) unstable; urgency=medium
+
+  * Add optional H.264 output scaling while preserving DMA capture geometry.
+
+ -- Local T527 Packaging <local-packaging@example.org>  Wed, 25 Nov 2026 00:00:00 +0800
+
+avaota-sun55i-cedar-codec (0.4.1+sun55i20261125) unstable; urgency=medium
+
+  * Use the visible NV12 input height for direct VIN DMA encoding.
+
+ -- Local T527 Packaging <local-packaging@example.org>  Wed, 25 Nov 2026 00:00:00 +0800
+
+avaota-sun55i-cedar-codec (0.4.0+sun55i20261125) unstable; urgency=medium
+
+  * Add Cedar DMA-BUF import and direct H.264 encoding to the bridge API.
+
+ -- Local T527 Packaging <local-packaging@example.org>  Wed, 25 Nov 2026 00:00:00 +0800
+
 avaota-sun55i-cedar-codec (0.3.0+sun55i20261124) unstable; urgency=medium
 
   * Add a stable H.264 encoder bridge for external applications.
